@@ -1,0 +1,128 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2eae2;
+}
+
+.main {
+  /*ამ დივშია მოთავსებული ყველაფერი*/
+
+  margin-top: 32px;
+  margin-bottom: 32px;
+  height: 600px;
+}
+.text-div {
+  background-color: #ffffff;
+
+  margin-top: -15px;
+
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 15px;
+  height: 500px;
+}
+.mobile-img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.desktop-image {
+  display: none;
+}
+
+p {
+  padding-top: 35px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 5px;
+  color: #6c7289;
+}
+
+h1 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #1c232b;
+}
+
+.price-div {
+  display: flex;
+}
+
+.h1-price {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #3d8168;
+}
+.p-price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  text-decoration-line: line-through;
+  color: #6c7289;
+  transform: translate(10px, -20px);
+}
+
+button {
+  background-color: #3d8168;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.p-button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  transform: translate(10px, -18px);
+}
+
+/* desktop ვერსია */
+
+@media (min-width: 795px) {
+  .mobile-img {
+    display: none;
+  }
+  .desktop-image {
+    display: block;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr auto;
+    height: 600px;
+  }
+
+  .text-div {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    height: auto;
+
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+}

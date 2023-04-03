@@ -98,31 +98,39 @@ button {
 
 /* desktop ვერსია */
 
-@media (min-width: 795px) {
+@media (min-width: 1200px) {
   .mobile-img {
     display: none;
   }
   .desktop-image {
     display: block;
+    height: 100%;
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
-  }
 
-  .main {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1fr auto;
-    height: 600px;
+    
+ 
   }
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+  height: 600px;
+ 
+  
+}
+.text-div{
+  height: 100%;
+  margin-top: 15px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 15px;
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 400px;
+  
 
-  .text-div {
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    height: auto;
-
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
-  }
+}
+  
 }
